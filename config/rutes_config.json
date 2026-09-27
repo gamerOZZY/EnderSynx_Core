@@ -1,0 +1,16 @@
+{
+    "pc":{
+        "ruta_carpeta_mundo_upload": "",
+        "nombre_mundo_pull":"",
+        "op_pull":"s",
+        "ruta_carpeta_saves_pull":""
+    },
+
+    "deck":{
+        "ruta_carpeta_mundo_upload": "",
+        "nombre_mundo_pull":"",
+        "op_pull":"s",
+        "ruta_carpeta_saves_pull":""
+    }
+
+}   
