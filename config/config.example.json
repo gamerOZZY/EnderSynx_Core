@@ -1,0 +1,5 @@
+{
+    "bucket_name": "bucket",
+    "aws_profile": "user",
+    "region": "region"
+}

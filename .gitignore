@@ -1,0 +1,16 @@
+
+## Enviroment files
+.env/
+.venv/
+venv/
+
+## Config Files
+config.json
+
+## Python cache files and stuff like that lol
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
