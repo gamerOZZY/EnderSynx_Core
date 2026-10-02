@@ -1,9 +1,9 @@
 {
     "pc":{
-        "ruta_carpeta_mundo_upload": "",
-        "nombre_mundo_pull":"",
+        "ruta_carpeta_mundo_upload": "C:\\Users\\ozzyr\\.lunarclient\\profiles\\chocolate-edition-minecraft\\saves\\New World\"==",
+        "nombre_mundo_pull":"New World\"==",
         "op_pull":"s",
-        "ruta_carpeta_saves_pull":""
+        "ruta_carpeta_saves_pull":"C:\\Users\\ozzyr\\.lunarclient\\profiles\\chocolate-edition-minecraft\\saves"
     },
 
     "deck":{
