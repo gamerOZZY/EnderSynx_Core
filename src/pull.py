@@ -1,70 +1,11 @@
-import hashlib
-import json
-import shutil
 import tempfile
 from pathlib import Path
-
-import boto3
-
 from checkFiles import obtener_metadata
-
-## Ruta de configuracion lol
-CONFIG_PATH = (
-    Path(__file__).resolve().parent.parent
-    / "config"
-    / "config.json"
-)
-
-## Cargar los datos de la configuracion en memoria
-def cargar_configuracion():
-    with CONFIG_PATH.open("r", encoding="utf-8") as archivo:
-        return json.load(archivo)
-
-
-## SHA256 para la encriptacion de los archivos (aunque solo son mundos de minecraft,
-## termina siendo una buena practica)
-def calcular_sha256(ruta_archivo, bloque=1024 * 1024):
-    sha256 = hashlib.sha256()
-
-    with ruta_archivo.open("rb") as archivo:
-        while bloque_actual := archivo.read(bloque):
-            sha256.update(bloque_actual)
-
-    return sha256.hexdigest()
-
-## Conexion con S3
-def crear_s3_client(configuracion):
-    sesion = boto3.Session(
-        profile_name=configuracion["aws_profile"],
-        region_name=configuracion["region"]
-    )
-
-    return sesion.client("s3")
-
-## descarga el archivo zip del bucket s3
-def descargar_zip(
-    s3,
-    configuracion,
-    world_name,
-    ruta_zip
-):
-    bucket = configuracion["bucket_name"]
-    clave_zip = f"worlds/{world_name}/latest.zip"
-
-    s3.download_file(
-        bucket,
-        clave_zip,
-        str(ruta_zip)
-    )
-
-
-## Toma la ruta donde se descargo el archivo zip y lo descomprime aih mismo
-def descomprimir_zip(ruta_zip, ruta_destino):
-    shutil.unpack_archive(
-        str(ruta_zip),
-        str(ruta_destino),
-        format="zip"
-    )
+from utils import cargar_configuracion
+from utils import calcular_sha256
+from utils import crear_s3_client
+from utils import descargar_zip
+from utils import descomprimir_zip
 
 
 def main():

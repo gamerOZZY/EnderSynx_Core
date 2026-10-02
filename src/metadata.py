@@ -4,7 +4,7 @@ from pathlib import Path
 
 def create_metadata(ruta_zip):
     return {
-        "world_name": "New World\"==",
+        "world_name": "New Worldrr\"==",
         "minecraft_version": "1.20.1",
         "modpack": "Chocolate Edition",
         "modpack_version": "1.0.0",
