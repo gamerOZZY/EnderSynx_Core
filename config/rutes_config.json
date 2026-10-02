@@ -1,17 +1,17 @@
 {
     "pc":{
-        "ruta_carpeta_mundo_upload": "C:\\Users\\ozzyr\\.lunarclient\\profiles\\chocolate-edition-minecraft\\saves\\New Worldrr\"==",
-        "nombre_mundo_pull":"New Worldrr\"==",
+        "ruta_carpeta_mundo_upload": "C:\\Users\\ozzyr\\.lunarclient\\profiles\\chocolate-edition-minecraft\\saves\\New Worldrr''==",
+        "nombre_mundo_pull":"New Worldrr''==",
         "ruta_carpeta_saves_pull":"C:\\Users\\ozzyr\\.lunarclient\\profiles\\chocolate-edition-minecraft\\saves"
         
     },
 
     "deck":{
         "ruta_carpeta_mundo_upload": "/run/media/deck/DickDeck/Minecraft/instancias/Chocolate Edition Minecraft/minecraft/saves/New Worldrr''==",
-        "nombre_mundo_pull":"New Worldrr\"==",
+        "nombre_mundo_pull":"New Worldrr''==",
         "ruta_carpeta_saves_pull":"/run/media/deck/DickDeck/Minecraft/instancias/Chocolate Edition Minecraft/minecraft/saves/"
     },
-    "world_name":"New Worldrr\"==",
+    "world_name":"New Worldrr''==",
     "op_pull":"s"
 
 }   
